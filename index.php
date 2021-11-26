@@ -15,6 +15,7 @@ $myParagraph = "Questo è un paragrafo di prova per l'esercizio di oggi.";
 
 <body>
   <p><?php echo $myParagraph ?></p>
+  <div><?php echo "Lunghezza paragrafo: " . strlen($myParagraph) ?></div>
 </body>
 
 </html>
