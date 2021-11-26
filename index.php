@@ -1,6 +1,6 @@
 <?php
+$badword = $_GET["badword"];
 $myParagraph = "Questo è un paragrafo di prova per l'esercizio di oggi.";
-
 ?>
 
 <!DOCTYPE html>
@@ -14,8 +14,9 @@ $myParagraph = "Questo è un paragrafo di prova per l'esercizio di oggi.";
 </head>
 
 <body>
-  <p><?php echo $myParagraph ?></p>
-  <div><?php echo "Lunghezza paragrafo: " . strlen($myParagraph) ?></div>
+  <p style="font-size:40px;"><?php echo $myParagraph ?></p>
+  <div style="font-size: 20px"><?php echo "Lunghezza paragrafo: " . strlen($myParagraph) ?></div>
+  <p style="font-size: 30px;"><?php echo "Paragrafo con parola rimossa: " . str_replace($badword, "***", $myParagraph) ?></p>
 </body>
 
 </html>
